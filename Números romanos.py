@@ -2,20 +2,24 @@
 #Autor: Aaron Tontiuh Villanueva Guzmán
 #Este programa hace cosas
 
-def final(var):
-  if: var => 1 and <=3
-    q=var*"I"
-  elif: var ==4
-    q=((var-3)*"I")+"V"
-  elif: var => 5 and <=8
-    q="V"+((var-5)*"I")
-  elif: var ==9
-    q="V"+((var-8)*"I")
+def crearNumeroRomano(entero):
+  if: entero => 1 and <=3
+    q=entero*"I"
+  elif: entero ==4
+    q=((entero-3)*"I")+"V"
+  elif: entero => 5 and <=8
+    q="V"+((entero-5)*"I")
+  elif: entero ==9
+    q=((entero-8)*"I")+"X"
+  elif: entero ==10
+    q="X"
+  else:
+    q="error"
   return(q)
 
 def Main():
-  x=int(input("Ingrese cosas"))
-  final=funcion(x)
-  print(final)
+  datosEntrada=int(input("Ingrese un número del 1 al 10"))
+  numeroRomano=crearNumeroRomano(datosEntrada)
+  print(numeroRomano)
 
 Main()
