@@ -1,6 +1,7 @@
 #encoding: UTF-8
 #Autor Aaron Tonatiuh Villanueva Guzmán
-
+import turtle
+  
 def calcularArea(ancho,largo):
   areafuncion=ancho*largo
   return(areafuncion)
@@ -10,17 +11,15 @@ def calcularPerimetro(ancho,largo):
   return(perimetrofuncion)
 
 def diferenciaareas(areaA,areaB):
-  if areaA<areaB
+  if areaA<areaB:
     mayor="El primer rectángulo tiene mayor área"
-  elif areaA>areaB
+  elif areaA>areaB:
     mayor="El segundo rectángulo tiene mayor área"
   else: 
     mayor="Ambos rectángulos tienen la misma área"
   return(mayor)
 
 def dibujarrectangulo(ancho,largo):
-  import.turtle
-  turtle.shape ("turtle")
   turtle.begin_fill()
   turtle.forward(ancho)
   turtle.right(90)
@@ -39,8 +38,10 @@ def Main():
   largoB=float(input("Ingrese el largo del segundo rectángulo"))
   areaA=calcularArea(anchoA,largoA)
   areaB=calcularArea(anchoB,largoB)
-
-  print(diferenciaareas())
+  perimetroA=calcularPerimetro(anchoA,largoA)
+  perimetroB=calcularPerimetro(anchoB,largoB)
+  rectangulomayor=diferenciaareas(areaA,areaB)
+  dibujarrectangulo(anchoA,anchoB)
 
 Main()
 
