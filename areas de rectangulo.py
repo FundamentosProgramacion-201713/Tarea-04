@@ -10,7 +10,7 @@ def calcularPerimetro(ancho,largo):
   perimetrofuncion=(2*ancho)+(2*largo)
   return(perimetrofuncion)
 
-def diferenciaareas(areaA,areaB):
+def elegirareamayor(areaA,areaB):
   if areaA>areaB:
     mayor="El primer rectángulo tiene mayor área"
   elif areaA<areaB:
@@ -48,7 +48,7 @@ def Main():
   areaB=calcularArea(anchoB,largoB)
   perimetroA=calcularPerimetro(anchoA,largoA)
   perimetroB=calcularPerimetro(anchoB,largoB)
-  rectangulomayor=diferenciaareas(areaA,areaB)
+  rectangulomayor=elegirareamayor(areaA,areaB)
   print("El área del primer rectángulo es de %.2f unidades"% areaA)
   print("El área del segundo rectángulo es de %.2f unidades"% areaB)
   print("El perimtero del primer rectángulo es de %.2f unidades"% perimetroA)
