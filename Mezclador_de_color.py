@@ -4,15 +4,14 @@ def mezcladordecolor(primercolor,segundocolor):
   elif (primercolor == "rojo" or primercolor=="amarillo") and (segundocolor=="rojo" or segundocolor=="amarillo"):
     colormezclado="Naranja"
   elif (primercolor == "azul" or primercolor=="amarillo") and (segundocolor=="azul" or segundocolor=="amarillo"):
-    colormezclado="verde"
+    colormezclado="Verde"
+  else:
+    colormezclado="error"
   return(colormezclado)
 
 def Main():
   primario=input("Ingrese el primer color").lower()
   secundario=input("ingrese el segundo color").lower()
-  if (primario== "rojo","azul","amarillo") and (secundario=="rojo","azul","amarillo"):
-    print(mezcladordecolor(primario,secundario))
-  else:
-    print("error")
-    
+  print(mezcladordecolor(primario,secundario))
+
 Main()
