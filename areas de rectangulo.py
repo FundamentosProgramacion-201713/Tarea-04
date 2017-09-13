@@ -19,13 +19,28 @@ def diferenciaareas(areaA,areaB):
   return(mayor)
 
 def dibujarrectangulo(ancho,largo):
-  turtle()
+  import.turtle
+  turtle.shape ("turtle")
+  turtle.begin_fill()
+  turtle.forward(ancho)
+  turtle.right(90)
+  turtle.forward(largo)
+  turtle.right(90)
+  turtle.forward(ancho)
+  turtle.right(90)
+  turtle.forward(largo)
+  turtle.color("green")
+  turtle.end_fill()
   
-
 def Main():
   anchoA=float(input("Ingrese el ancho del primer rectángulo"))
-  
+  largoA=float(input("Ingrese el largo del primer rectángulo"))
   anchoB=float(input("Ingrese el ancho del segundo rectángulo"))
+  largoB=float(input("Ingrese el largo del segundo rectángulo"))
+  areaA=calcularArea(anchoA,largoA)
+  areaB=calcularArea(anchoB,largoB)
+
+  print(diferenciaareas())
 
 Main()
 
