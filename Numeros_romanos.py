@@ -1,5 +1,5 @@
 #coding: UTF-8
-#Autor: Aaron Tontiuh Villanueva Guzmán
+#Autor: Aaron Tonatiuh Villanueva Guzmán
 #Este programa imprime el número romano correspondiente a un número introducido por el usuario. Solamente es capaz de leer números del 1 al 10.
 
 def crearNumeroRomano(entero):
