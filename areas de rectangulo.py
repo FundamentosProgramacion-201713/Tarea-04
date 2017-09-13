@@ -11,12 +11,12 @@ def calcularPerimetro(ancho,largo):
   return(perimetrofuncion)
 
 def diferenciaareas(areaA,areaB):
-  if areaA<areaB:
+  if areaA>areaB:
     mayor="El primer rectángulo tiene mayor área"
-  elif areaA>areaB:
+  elif areaA<areaB:
     mayor="El segundo rectángulo tiene mayor área"
   else: 
-    mayor="Ambos rectángulo tienen la misma área"
+    mayor="Ambos rectángulos tienen la misma área"
   return(mayor)
 
 def dibujarrectangulo(ancho,largo,color):
