@@ -1,4 +1,4 @@
-def mezcladordecolor(primercolor,segundocolor):
+def mezclarcolor(primercolor,segundocolor):
   if (primercolor == "rojo" or primercolor=="azul") and (segundocolor=="rojo" or segundocolor=="azul"):
     colormezclado="Morado"
   elif (primercolor == "rojo" or primercolor=="amarillo") and (segundocolor=="rojo" or segundocolor=="amarillo"):
@@ -12,6 +12,6 @@ def mezcladordecolor(primercolor,segundocolor):
 def Main():
   primario=input("Ingrese el primer color").lower()
   secundario=input("ingrese el segundo color").lower()
-  print(mezcladordecolor(primario,secundario))
+  print(mezclarcolor(primario,secundario))
 
 Main()
