@@ -9,14 +9,14 @@ def calcularIMC(peso,altura):
 def Main():
   pesokg=float(input("Ingrese su peso en kg"))
   if pesokg<0:
-    print("error)
+    print("error")
   alturam=float(input("Ingrese su altura en m"))
   if altura<=0:
     print("error")
   imc=calcularIMC(pesokg,alturam)
   print(imc)
   if imc<=18.5:
-    print("bajo peso)
+    print("bajo peso")
   elif imc<=25:
     print("peso normal")
   elif imc>25:
@@ -24,3 +24,4 @@ def Main():
   
 
 Main()
+
