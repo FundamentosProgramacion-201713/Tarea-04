@@ -16,20 +16,28 @@ def diferenciaareas(areaA,areaB):
   elif areaA>areaB:
     mayor="El segundo rectángulo tiene mayor área"
   else: 
-    mayor="Ambos rectángulos tienen la misma área"
+    mayor="Ambos rectángulo tienen la misma área"
   return(mayor)
 
-def dibujarrectangulo(ancho,largo):
+def dibujarrectangulo(ancho,largo,color):
+  turtle.pencolor("black")
   turtle.begin_fill()
-  turtle.forward(ancho)
-  turtle.right(90)
   turtle.forward(largo)
   turtle.right(90)
   turtle.forward(ancho)
   turtle.right(90)
   turtle.forward(largo)
-  turtle.color("green")
+  turtle.right(90)
+  turtle.forward(ancho)
+  turtle.right(90)
+  turtle.forward(largo)
+  turtle.color(color)
   turtle.end_fill()
+
+def dibujarseparacion(espacio):
+  turtle.penup()
+  turtle.forward(espacio)
+  turtle.pendown()
   
 def Main():
   anchoA=float(input("Ingrese el ancho del primer rectángulo"))
@@ -41,7 +49,13 @@ def Main():
   perimetroA=calcularPerimetro(anchoA,largoA)
   perimetroB=calcularPerimetro(anchoB,largoB)
   rectangulomayor=diferenciaareas(areaA,areaB)
-  dibujarrectangulo(anchoA,anchoB)
-
+  print("El área del primer rectángulo es de %.2f unidades"% areaA)
+  print("El área del segundo rectángulo es de %.2f unidades"% areaB)
+  print("El perimtero del primer rectángulo es de %.2f unidades"% perimetroA)
+  print("El perimetro del segundo rectángulo es de %.2f unidades"% perimetroB)
+  print(rectangulomayor)
+  dibujarrectangulo(anchoA,largoA,"red")
+  dibujarseparacion(largoA)
+  dibujarrectangulo(anchoB,largoB,"blue")
+  
 Main()
-
