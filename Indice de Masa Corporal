@@ -11,7 +11,7 @@ def Main():
   if pesokg<0:
     print("error")
   alturam=float(input("Ingrese su altura en m"))
-  if altura<=0:
+  if alturam<=0:
     print("error")
   imc=calcularIMC(pesokg,alturam)
   print(imc)
@@ -24,4 +24,3 @@ def Main():
   
 
 Main()
-
