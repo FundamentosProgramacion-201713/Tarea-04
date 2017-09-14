@@ -3,6 +3,7 @@
 
 #Descripción: programa que lea un número del uno al 10 y lo transforme en romano
 
+# Una función que transforme un número normal del 1 al 10 a número romano
 def transformarNumero(numero):
     if 1<= numero <=3:
         romano = numero * "I"
@@ -18,7 +19,7 @@ def transformarNumero(numero):
         romano = "valor no válido para este programa"
     return romano
 
-
+# Función principal
 def main():
     numero = int(input("Ingrese un número entero del uno al 10: "))
     romano = transformarNumero(numero)

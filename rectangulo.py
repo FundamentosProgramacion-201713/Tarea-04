@@ -5,15 +5,19 @@
 # rectángulos en la tortuga
 
 import turtle
-
+# Una función que calcule el área de un rectángulo recibiendo base y altura
 def calcularArea(b, h):
     area = b * h
     return area
 
+
+# Una función que calcule el perímetro de un rectángulo recibiendo base y altura
 def calcularPerimetro(b, h):
     perimetro = (2 * b) + (2 * h)
     return perimetro
 
+
+# Una función que dibuje un rectángulo recibiendo base y altura
 def dibujarRectangulo(b, h):
     turtle.forward(b)
     turtle.left(90)
@@ -24,6 +28,7 @@ def dibujarRectangulo(b, h):
     turtle.forward(h)
     turtle.left(90)
 
+# Función principal
 def main():
     b1 = float(input("Ingrese la base del primer rectángulo: "))
     h1 = float(input("Ingresa la altura del primer rectángulo: "))
