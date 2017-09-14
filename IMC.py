@@ -13,6 +13,7 @@ def calcularIMC(p,e):
 def main():
     peso=float(input("Introduzca su peso (kg):"))
     estatura=float(input("Introduzca su estatura(m):"))
+    #   ACABAR EL PROGRAMA EN CASO DE ESTO SEA CIERTO.
     if peso or estatura < 0:
         print("ERROR")
 
