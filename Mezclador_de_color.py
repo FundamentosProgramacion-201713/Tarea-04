@@ -1,9 +1,14 @@
+#coding: UTF-8
+#Autor Aaron Tonatiuh Villanueva Guzmán
+#Este programa imprime el resultado de la mezcla de tres colores especificos sin importar su capitalización. Si recibe un color no preestablecido, regresa un mensaje de error.
+
+#Esta función procesa 
 def mezclarcolor(primercolor,segundocolor):
-  if (primercolor == "rojo" or primercolor=="azul") and (segundocolor=="rojo" or segundocolor=="azul"):
+  if (primercolor == "rojo" and segundocolor == "azul") or (primercolor == "azul" and segundocolor == "rojo"):
     colormezclado="Morado"
-  elif (primercolor == "rojo" or primercolor=="amarillo") and (segundocolor=="rojo" or segundocolor=="amarillo"):
+  elif (primercolor == "rojo" and segundocolor == "amarillo") or (primercolor == "blue" and segundocolor == "amarillo"):
     colormezclado="Naranja"
-  elif (primercolor == "azul" or primercolor=="amarillo") and (segundocolor=="azul" or segundocolor=="amarillo"):
+  elif (primercolor == "azul" and segundocolor == "amarillo") or (primercolor == "azul" and segundocolor == "amarillo"):
     colormezclado="Verde"
   else:
     colormezclado="error"
