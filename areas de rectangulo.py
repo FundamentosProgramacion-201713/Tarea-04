@@ -15,10 +15,10 @@ def calcularPerimetro(ancho,largo):
   return(perimetrofuncion)
 
 #Esta función determina cual de las dos áreas de los rectángulos es mayor.
-def elegirareamayor(areaA,areaB):
-  if areaA>areaB:
+def elegirareamayor(primerarea,segundaarea):
+  if primerarea>segundaarea:
     mayor="El primer rectángulo tiene mayor área"
-  elif areaA<areaB:
+  elif primerarea<segundaarea:
     mayor="El segundo rectángulo tiene mayor área"
   else: 
     mayor="Ambos rectángulos tienen la misma área"
