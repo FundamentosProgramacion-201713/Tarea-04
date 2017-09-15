@@ -1,15 +1,17 @@
 #Javier Pascal A01375925
 import turtle
-
-def Calcular_Area(base_1, altura_1, base_2, altura_2): #Aqui calculamos el area de los rectangulos con su base y altura
+#Aqui calculamos el area de los rectangulos con su base y altura
+def Calcular_Area(base_1, altura_1, base_2, altura_2):
     area_1=base_1*altura_1
     area_2=base_2*altura_2
     return area_1, area_2
-def Calcular_Perimetro(base_1, altura_1, base_2, altura_2):#Aqui calculamos el perimetro de los rectangulos con su base y altura
+#Aqui calculamos el perimetro de los rectangulos con su base y altura
+def Calcular_Perimetro(base_1, altura_1, base_2, altura_2):
     perimetro_1=(2*base_1)+(2*altura_1)
     perimetro_2 = (2 * base_2) + (2 * altura_2)
     return perimetro_1,perimetro_2
-def dibujar_Rectangulos(base_1, altura_1, base_2, altura_2): #En esta parte la tortuga dibuja los rectangulos
+#En esta parte la tortuga dibuja los rectangulos
+def dibujar_Rectangulos(base_1, altura_1, base_2, altura_2):
     turtle.bgcolor("black")
     turtle.setpos(100, 0)
     turtle.pencolor("red")
