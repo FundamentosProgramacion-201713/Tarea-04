@@ -6,9 +6,9 @@
 def mezclarcolor(primercolor,segundocolor):
   if (primercolor == "rojo" and segundocolor == "azul") or (primercolor == "azul" and segundocolor == "rojo"):
     colormezclado="Morado"
-  elif (primercolor == "rojo" and segundocolor == "amarillo") or (primercolor == "azul" and segundocolor == "amarillo"):
+  elif (primercolor == "rojo" and segundocolor == "amarillo") or (primercolor == "amarillo" and segundocolor == "rojo"):
     colormezclado="Naranja"
-  elif (primercolor == "azul" and segundocolor == "amarillo") or (primercolor == "azul" and segundocolor == "amarillo"):
+  elif (primercolor == "azul" and segundocolor == "amarillo") or (primercolor == "amarillo" and segundocolor == "azul"):
     colormezclado="Verde"
   else:
     colormezclado="error"
