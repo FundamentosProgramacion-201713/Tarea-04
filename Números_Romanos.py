@@ -12,10 +12,10 @@ def calcularNumRomano (numeroDecimal):
             if numeroDecimal==5:
                 x = ("V")
             else:
-                if numeroDecimal>5 and numeroDecimal<=8:
+                if numeroDecimal<=8:
                     x = (("V")+((numeroDecimal%5)*"I"))
                 else:
-                    if numeroDecimal==9 or numeroDecimal==10:
+                    if  numeroDecimal<=10:
                         x = (((numeroDecimal % 2) * ("I") + ("X")))
                     else:
                         x=("ERROR, escribe un número que este en el rango entre 1 y 10")
