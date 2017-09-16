@@ -19,7 +19,7 @@ def calcularDescuentoPorPaquete(paquetesComprados,precio): #Calcula el descuento
         return(total)
 
     elif paquetesComprados<=99 and paquetesComprados >=50:
-        descuento=.40
+        descuento=.60
         total=(paquetesComprados*precio)*descuento
         return(total)
     else:
