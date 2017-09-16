@@ -1,6 +1,14 @@
 #encoding: UTF-8
 #Autor: Luis Alfonso Alcántara López Ortega, A01374785
 
+#Función para validar la entrada del usuario
+def validar(color1, color2):
+    if color1 == 'ROJO' or color1 == 'AZUL' or color1 == 'AMARILLO':
+        if color2 == 'ROJO' or color2 == 'AZUL' or color2 == 'AMARILLO':
+            return True
+        else:
+            return False
+
 #Función para determinar el color resultante
 def colorResultante(a, b):
     resultado = ""
@@ -32,8 +40,6 @@ def colorResultante(a, b):
             resultado = "NARANJA"
         else:
             resultado = "Error en los colores escritos."
-    else:
-        resultado = "Error en los colores escritos."
     return resultado
 
 def main():
@@ -43,7 +49,11 @@ def main():
     color2 = input("Ingresa el segundo color: ")
     color2 = color2.upper()
 
-    colorFinal = colorResultante(color1, color2)
-    print(colorFinal)
+    esValido = validar(color1, color2)
+    if esValido:
+        colorFinal = colorResultante(color1, color2)
+        print("El color resultante es: ", colorFinal)
+    else:
+        print("Error en la entrada de los colores.")
 
 main()
