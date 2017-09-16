@@ -1,5 +1,6 @@
 #encoding: UTF-8
 #Autor: Luis Alfonso Alcántara López Ortega, A01374785
+#Programa para convertir un número decimal del uno al diez a romano
 
 #Función para validar la entrada del usuario (Debe estar en el rango [1,10]
 def validar(num):

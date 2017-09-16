@@ -1,5 +1,6 @@
 #encoding: UTF-8
 #Autor: Luis Alfonso Alcántara López Ortega, A01374785
+#Programa para calcular perímetro y área de dos rectángulos, compararlos y dibujarlos
 
 import turtle
 

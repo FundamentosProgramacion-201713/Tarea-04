@@ -1,5 +1,6 @@
 #encoding: UTF-8
 #Autor: Luis Alfonso Alcántara López Ortega, A01374785
+#Programa para calcular e imprimir el IMC de una persona además de clasificarla
 
 #Función para validar los datos
 def validarDatos(estatura, peso):
@@ -9,7 +10,7 @@ def validarDatos(estatura, peso):
         return True
 
 #Función para calcular el índice de masa corporal
-def calcularIMC(estatura, peso):
+def calcularIMC(peso, estatura):
     imc = peso / (estatura ** 2)
     return imc
 
@@ -31,7 +32,7 @@ def main():
     validacion = validarDatos(estatura, peso)
 
     if validacion:
-        indice = calcularIMC(estatura, peso)
+        indice = calcularIMC(peso, estatura)
         print("\nÍndice de masa corporal: ", round(indice, 2))
         clasificacion = clasificar(indice)
         print(clasificacion)

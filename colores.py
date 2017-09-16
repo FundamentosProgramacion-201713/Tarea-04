@@ -1,5 +1,6 @@
 #encoding: UTF-8
 #Autor: Luis Alfonso Alcántara López Ortega, A01374785
+#Programa para calcular el color resultante de dos entradas
 
 #Función para validar la entrada del usuario
 def validar(color1, color2):

@@ -1,5 +1,6 @@
 #encoding: UTF-8
 #Autor: Luis Alfonso Alcántara López Ortega, A01374785
+#Programa para calcular el total a pagar dependiendo del número de paquetes introducidos
 
 #Función para validar la entrada
 def validarEntrada(num):
