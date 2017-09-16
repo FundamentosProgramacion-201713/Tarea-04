@@ -10,9 +10,10 @@ def convertir_Decimal(numero): # En esta funcion convertimos el numero decimal a
             numero_Romano= "IV"
         elif numero <4:
             numero_Romano= "I"*(numero)
+        return numero_Romano
     else:
-        print("Numero invalido")
-    return numero_Romano
+        print("Numero inválido")
+#La función main se encarga de llamar a la otra función y de imprimir el resultado
 def main():
     numero=int(input("Dame un numero del 1 al 10:"))
     romano=convertir_Decimal(numero)
