@@ -11,7 +11,7 @@ def main():
             descuento = calcularDescuento(paquetes)
             print("Tu total con el descuento es de: ", descuento)
 
-def calcularDescuento(valor):
+def calcularDescuento(valor): # calcula el descuento dado y manda el resultado de regreso
     if valor>0 and valor<=10:
         descuento = (valor*paquete)
         return descuento
