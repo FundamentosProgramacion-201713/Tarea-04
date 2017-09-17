@@ -12,6 +12,16 @@ def determinarColor(minusculaColor1, minusculaColor2): #Determina el color resul
     elif (minusculaColor1=="azul" and minusculaColor2=="amarillo" ) or (minusculaColor1=="amarillo" and minusculaColor2=="azul"):
         colorResultante="verde"
         return colorResultante
+    elif (minusculaColor1=="rojo" and minusculaColor2=="rojo"):
+        colorResultante="rojo"
+        return colorResultante
+    elif (minusculaColor1=="azul" and minusculaColor2=="azul"):
+        colorResultante="azul"
+        return colorResultante
+    elif (minusculaColor1=="amarillo" and minusculaColor2=="amarillo"):
+        colorResultante="amarillo"
+        return colorResultante
+
 
     else:
         colorResultante="Error"
