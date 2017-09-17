@@ -38,7 +38,6 @@ def calcularDescuento(numero_paquetes): #Calcula el importe de descuento.
         return descuento
 
 
-
 def main (): #Programa principal.
 
     numero_paquetes = int(input("Teclea la cantidad de paquetes de software que compraste: "))

@@ -12,6 +12,15 @@ def combinarColores(color1, color2): #Verificamos la combinación creada y la de
     elif (color1 == "azul" or color2 == "azul") and (color1 == "amarillo" or color2 == "amarillo"):
         color_resultante3 = "VERDE"
         return color_resultante3
+    elif (color1 == "rojo" or color2 == "rojo") and (color1 == "rojo" or color2 == "rojo"):
+        color_resultante = "ROJO"
+        return color_resultante
+    elif (color1 == "amarillo" or color2 == "amarillo") and (color1 == "amarillo" or color2 == "amarillo"):
+        color_resultante = "AMARILLO"
+        return color_resultante
+    elif (color1 == "azul" or color2 == "azul") and (color1 == "azul" or color2 == "azul"):
+        color_resultante = "AZUL"
+        return color_resultante
 
 
 def main (): #Programa Principal.
@@ -26,6 +35,6 @@ def main (): #Programa Principal.
         color_resultante = combinarColores(color1, color2)
         print("El color resultante es:", color_resultante)
     else:
-        print("ERROR, debes teclear las letras de algún color primerio")
+        print("ERROR, debes teclear las letras de algún color primario")
 
 main()
