@@ -4,7 +4,7 @@
 
 import turtle
 
-def main():
+def main(): #compila las demás funciones, les da el valor que ingresa el usuario y regresa el area, perimetro y un dibujo de los rectangulos
     basePrimera = int(input("Ingrese la medida para la base del primer rectángulo: "))
     alturaPrimera = int(input("Ingrese la altura del primer rectángulo: "))
 
@@ -22,8 +22,8 @@ def main():
     dibujarPrimerRectangulo(basePrimera, alturaPrimera)
     dibujarSegundoRectangulo(baseSegunda, alturaSegunda)
 
-def dibujarPrimerRectangulo(base, altura):
-
+def dibujarPrimerRectangulo(base, altura): #dibuja el primer rectángulo en color rojo
+    turtle.color(red)
     turtle.forward(base)
     turtle.left(90)
     turtle.forward(altura)
@@ -31,8 +31,8 @@ def dibujarPrimerRectangulo(base, altura):
     turtle.left(90)
     turtle.forward(altura)
 
-def dibujarSegundoRectangulo(base, altura):
-
+def dibujarSegundoRectangulo(base, altura): #dibuja el segundo rectangulo en color verde
+    turtle.color(green)
     turtle.forward(base)
     turtle.left(90)
     turtle.forward(altura)
@@ -40,19 +40,19 @@ def dibujarSegundoRectangulo(base, altura):
     turtle.left(90)
     turtle.forward(altura)
 
-def calcularArea1(base, altura):
+def calcularArea1(base, altura): #calcula el area del primer rectangulo
     area = base * altura
     return area
 
-def calcularPerimetro1(base, altura):
+def calcularPerimetro1(base, altura): #calcula el perimetro del primer rectangulo
     perimetro = (base*2)+(altura*2)
     return perimetro
 
-def calcularArea2(base, altura):
+def calcularArea2(base, altura): #calcula el area del segundo rectangulo
     area = base * altura
     return area
 
-def calcularPerimetro2(base, altura):
+def calcularPerimetro2(base, altura): #calcula el perimetro del segundo triangulo
     perimetro = (base*2)+(altura*2)
     return perimetro
 
