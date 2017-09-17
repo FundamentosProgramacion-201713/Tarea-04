@@ -14,7 +14,7 @@ def definirCombinacion(color1, color2):
     elif (color1 == color2 ):
         return "No hay combinación, el color sigue siendo %s" % color1
     else:
-        return "Los colores que diste no son validos"
+        return "ERROR: Los colores que diste no son validos"
 
 #Funcion principal main que lee, procesa e imprime datos
 def main():
