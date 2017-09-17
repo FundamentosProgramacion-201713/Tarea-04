@@ -4,7 +4,7 @@
 a = "amarillo"
 r = "rojo"
 az = "azul"
-def main():
+def main(): #compila los datos de los colores, llama a la funcion para combinarlos y las resuelve
     color1 = input("Ingrese el primer color (rojo, azul, amarillo): ")
     color2 = input("Ingrese el segundo color (rojo, azul, amarillo): ")
     if color1 and color2 != a and r and az:
